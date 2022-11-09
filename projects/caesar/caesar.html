@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" href=".../styles.css">
+      <title>Mr. G's Projects</title>
+      <div class="navBar">
+        <ul>
+          <li><img width=80 height=71 src="../assets/images/white_logo.png"></li>
+          <li><a href=".../index.html"><b>Home</b></a></li>
+          <li><a href=".../projects.html"><b>My Projects</b></a></li>
+        </ul>
+      </div>
+    </head>
+    <body>
+      <h1>Mr. G's Projects</h1>
+      <div class="projectList">
+        <ul>
+          <li><a href=".../pong/pong.html">Pong</a></li>
+          <li><a href=".../tictactoe/tictactoe.html">Tic-Tac-Toe</a></li>
+          <li><a class="active" href=".../caesar/caesar.html">Caesar Encryption</a></li>
+        </ul>
+      </div>
+      <p>Use a number key to encrypt and decrypt messages.</p>
+      <input type="radio" name="choice" value="encrypt">
+      <label for="encrypt">Encrypt</label>
+      <input type="radio" name="choice" value="decrypt">
+      <label for="decrypt">Decrypt</label>
+      <br><br>
+      <label for="key">Key:</label>
+      <input type="number" id="key" name="key" size=20>
+      <br><br>
+      <label for="message">Message:</label>
+      <br>
+      <textarea type="text" id="message" name="message" style="white-space:pre;" rows="5" cols="50"></textarea>
+      <br><br>
+      <button id="btn">Generate Encrypted/Decrypted Message</button>
+      <p id="output" style="white-space: pre;"></p>
+      <script src=".../caesar/caesar.js"></script>
+    </body>
+</html>
