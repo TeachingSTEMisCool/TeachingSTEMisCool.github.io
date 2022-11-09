@@ -1,0 +1,84 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: block;
+  padding: 2px 2px;
+  margin: 2px;
+  width: fit-content;
+  font-family: Garamond;
+}
+
+img {
+  float: left;
+  background-color: blue;
+}
+
+.navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+.navBar li {
+  float: left;
+}
+
+.navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 16px;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 20px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navBar li a:hover {
+  background-color: darkblue;
+}
+
+.projectList ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.projectList li {
+  float: left;
+  border-right: 1px solid black;
+}
+
+.projectList li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 16px;
+}
+
+.projectList li a:hover {
+  background-color: dimgray;
+}
+
+.active {
+  background-color: darkgray;
+}
+
+#pong {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
