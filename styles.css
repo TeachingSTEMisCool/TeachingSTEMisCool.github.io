@@ -14,7 +14,8 @@ h1 {
 
 img {
   float: left;
-  background-color: blue;
+  background-color: #0F36F6;
+  padding: 1px;
 }
 
 .navBar ul {
@@ -22,7 +23,7 @@ img {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: blue;
+  background-color: #0F36F6;
 }
 
 .navBar li {
