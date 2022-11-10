@@ -2,18 +2,38 @@
 <html>
     <head>
       <link rel="stylesheet" href="styles.css">
-      <title>Coding I/II Resources</title>
+      <title>Computer Science Resources</title>
       <link rel="icon" type="image/x-icon" href="assets/images/white_logo.png">
-      <div class="navBar">
-        <ul>
-          <li><img width=80 height=71 src="assets/images/white_logo.png"></li>
-          <li><a href="index.html"><b>Home</b></a></li>
-          <li><a href="student_projects.html"><b>Student Projects</b></a></li>
-          <li><a href="projects.html"><b>My Projects</b></a></li>
-        </ul>
-      </div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <!--Navigation bar-->
+        <div id="nav-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
     </head>
     <body>
-      <h1>Coding I/II Resources</h1>
+      <h1>Computer Science Resources</h1>
+      <h3>General Programming Tutorials</h3>
+      <ul>
+        <li><a href="https://codecademy.com">Codecademy</a></li>
+        <li><a href="https://freecodecamp.org">freeCodeCamp</a></li>
+        <li><a href="w3schools.com">W3Schools</a></li>
+      </ul>
+      <h3>HTML/JavaScript/CSS Tutorials</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">mdn</a></li>
+        <li><a href="https://html.com">html.com</a></li>
+      </ul>
+      <h3>Python Tutorials</h3>
+      <ul>
+        <li><a href="https://practicepython.org">Practice Python</a></li>
+        <li><a href="https://docs.python.org/3/tutorial/index.html">python.org</a></li>
+      </ul>
     </body>
 </html>
