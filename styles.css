@@ -105,12 +105,15 @@ img {
 
 table {
   border-collapse: collapse;
-  width: 50%;
+  width: 75%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 th, td {
   text-align: left;
   padding: 8px;
+  border-bottom: 1px solid #dddddd;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
@@ -118,4 +121,5 @@ tr:nth-child(even){background-color: #f2f2f2}
 th {
   background-color: dimgray;
   color: white;
+  font-weight: bold;
 }
