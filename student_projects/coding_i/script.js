@@ -79,7 +79,7 @@ function loadDropdown(course){
       for (const item in data) {
         let option = document.createElement("option");
         option.value = data[item];
-        option.innerHTML = data[item];
+        option.innerHTML = data[item].replaceAll("_"," ");
         dropdown.appendChild(option);
       }
       document.getElementById("dropDiv").appendChild(dropdown);
