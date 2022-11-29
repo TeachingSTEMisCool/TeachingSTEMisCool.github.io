@@ -22,7 +22,7 @@ h1 {
   font-family: Tahoma;
 }
 
-img {
+.navBar img {
   display: block;
   float: left;
   background-color: #0F36F6;
@@ -106,7 +106,7 @@ img {
 table {
   border-collapse: collapse;
   width: 75%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
 }
 
 th, td {
@@ -114,12 +114,15 @@ th, td {
   padding: 8px;
   border-bottom: 1px solid #dddddd;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 20px;
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-  background-color: dimgray;
+  background-color: #484848;
   color: white;
   font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }

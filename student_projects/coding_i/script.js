@@ -41,11 +41,11 @@ function createTable(){
           let table_row = document.createElement("tr");
           let row_name = document.createElement("td");
           row_name.innerHTML = keys[i];
-          row_name.width = "120px";
+          row_name.width = "140px";
           table_row.appendChild(row_name);
           let row_type = document.createElement("td");
           row_type.innerHTML = data[item].type;
-          row_type.width = "120px";
+          row_type.width = "140px";
           table_row.appendChild(row_type);
           let row_link = document.createElement("td");
           row_link.innerHTML = data[item].link;
@@ -75,12 +75,12 @@ function loadDropdown(course){
       const first = document.createElement("option");
       first.value = "";
       first.innerHTML = "--Please choose an option--";
-      dropdown.append(first);
+      dropdown.appendChild(first);
       for (const item in data) {
         let option = document.createElement("option");
         option.value = data[item];
         option.innerHTML = data[item];
-        dropdown.append(option);
+        dropdown.appendChild(option);
       }
       document.getElementById("dropDiv").appendChild(dropdown);
     } else {
