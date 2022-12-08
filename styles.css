@@ -70,6 +70,7 @@ h1 {
   background-color: lightgray;
   /*border: 1px solid black;*/
   position: fixed;
+  border-right: 1px solid black;
 }
 
 /*.projectList li {
