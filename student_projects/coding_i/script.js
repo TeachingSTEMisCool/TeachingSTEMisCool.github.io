@@ -49,6 +49,7 @@ function createTable(){
           table_row.appendChild(row_type);
           let link = document.createElement("a");
           link.innerHTML = data[item].link;
+          link.href = "https://" + data[item].link;
           let row_link = document.createElement("td");
           row_link.appendChild(link);
           table_row.appendChild(row_link);
