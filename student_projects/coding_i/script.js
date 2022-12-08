@@ -47,8 +47,10 @@ function createTable(){
           row_type.innerHTML = data[item].type;
           row_type.width = "140px";
           table_row.appendChild(row_type);
+          let link = document.createElement("a");
+          link.innerHTML = data[item].link;
           let row_link = document.createElement("td");
-          row_link.innerHTML = data[item].link;
+          row_link.appendChild(link);
           table_row.appendChild(row_link);
           table.appendChild(table_row);
           i++;
