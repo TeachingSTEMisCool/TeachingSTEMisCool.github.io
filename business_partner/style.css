@@ -36,7 +36,7 @@
     font-size: 17px;
   }
 
-  td:hover {background-color: darkcyan;}
+  td:hover {background-color: cornflowerblue;}
   
   #drp_prm {
     background-color: lightblue;
@@ -160,7 +160,7 @@
     width: 50px;
   }
   
-  .NavItems:hover{background-color: blue;}
+  .NavItems:hover{background-color: cornflowerblue;}
 
   #prntTxt{
     padding-left: 10px;
