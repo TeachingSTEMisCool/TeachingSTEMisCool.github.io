@@ -39,7 +39,7 @@
   td:hover {background-color: darkcyan;}
   
   #drp_prm {
-    background-color: #149fd2;
+    background-color: lightblue;
     color: black;
     border: 1px solid;
     border-color: black;
@@ -137,7 +137,7 @@
     padding: 0;
     list-style-type: none;
     margin: 0;
-    background-color: #149fd2;
+    background-color: lightblue;
     display: inline;
     float: left;
     width: var(--ViewWidth);
@@ -148,7 +148,7 @@
     width:50px;
     display: block;
     padding: 8px;
-    background-color: #149fd2;
+    background-color: lightblue;
     float: left;
     text-align:center;
     margin-left: auto;
