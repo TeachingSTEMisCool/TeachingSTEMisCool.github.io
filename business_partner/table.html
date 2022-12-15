@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WHHS CTE Partners</title>
+  <link rel="icon" type="image/x-icon" href="Assets/whh-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="overlay"></div>
+
+  <ul id="Navbar">
+    <li class="NavItems" id="hlp_icn">
+      <img src=Assets/help-circle.svg>
+    </li>
+    <li class="NavItems" id="print">
+      <img src=Assets/printer.svg>
+    </li>
+    <a href="../index.html">
+      <li class="NavItems" id="home">
+        <img src="Assets/home.svg">
+      </li>
+    </a>
+    <a href="editing.html">
+      <li class="NavItems" id="edit_table" style="float:right;">
+        <img src="Assets/edit.svg">
+      </li>
+    </a>
+  </ul>
+
+  <div style="padding-top:91px;">
+
+    <div id="AWSError">
+      <img src=Assets/x-circle.svg id="cls_err_msg">
+      <img id="ErrorImg" src=Assets/alert-triangle.svg>
+      <p id="ErrorMessage">Sorry, something went wrong. The table or drop down may not load correctly.</p>
+      <div style="float:right;" class="CSS_btns" id="SeeErrorDetails"><p style="margin-top:8px;">See Details</p></div>
+    </div>
+  
+    <div id="ErrorDetailsBox">
+      <img src=Assets/x-circle.svg id="cls_err_details">
+      <p id="ErrorDetailsTxtTable"></p>
+      <p id="ErrorDetailsTxtDrp"></p>
+    </div>
+
+    <div id="hlp_popup">
+      <img src=Assets/x-circle.svg id="cls_hlp">
+      <p id="hlp_txt"></p>
+    </div>
+
+    <div id="xtra_info_popup">
+      <img src=Assets/x-circle.svg id="cls_xtra_info">
+      <div id = "xtra_info_txt_container"></div>
+    </div>
+
+    <div id="prntWrningPopup">
+      <img src=Assets/x-circle.svg id="cls_prnt_wrning">
+      <br>
+      <h1 id="Warning">!!Warning!!</h1>
+      <p id="prntTxt">The whole table may not show up without filtering it first.</p>
+      <div id="printAnyway">
+        <p id="printAnywayTxt">Print Anyway</p>
+      </div>
+    </div>
+
+    <div id="Table">
+      <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1205.0.min.js"></script>
+
+      <select id="drp_prm">
+        <option value="Default">Choose a filter</option>
+      </select>
+
+      <div id="dynamicTable"></div>
+      
+      <script src=table.js></script>
+      <script src=help.js></script>
+      <script src=print.js></script>
+    </div>
+  </div>
+</body>
+
+</html>

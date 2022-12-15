@@ -1,0 +1,225 @@
+:root{
+    --ViewWidth:1000px;
+    --TableSize:100px;
+    --HelpHeight:150px;
+    --BodyWidth:2000px;
+    --BodyHeight:1000px;
+    --xtraInfoHeight:150px;
+  }
+  
+  html, body {
+    height: var(--BodyHeight);
+    width: var(--BodyWidth);
+    margin: 0;
+    padding: 0;
+  }
+  
+  table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: white;
+    padding: 10px;
+    font-family: 'Verdana';
+  }
+  
+  th {
+    background-color: blue;
+    color: white;
+  }
+
+  tr {
+    background-color: lightblue;
+  }
+
+  #xtra_info_txt_container {
+    padding: 10px;
+    font-size: 17px;
+  }
+
+  td:hover {background-color: darkcyan;}
+  
+  #drp_prm {
+    background-color: #149fd2;
+    color: black;
+    border: 1px solid;
+    border-color: black;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #dynamicTable, #Table {
+    padding: 15px;
+  }
+  
+  #hlp_icn, #menu_icn, #print, #home{
+    cursor:pointer;
+  }
+  
+  #hlp_txt {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Georgia;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  #overlay {
+    background-color: rgba(0,0,0,0.75);
+    position:fixed;
+    left:0;
+    top: 0;
+    width:100%;
+    height:100%;
+    display: none;
+    z-index: 500;
+  }
+  
+  #cls_hlp, #cls_xtra_info, #cls_prnt_wrning, #cls_err_details, #cls_err_msg{
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+    width: 28px;
+    
+  }
+  
+  #prntWrningPopup {
+    width: 400px;
+    height: 200px;
+    margin-left: -200px;
+    margin-top: -100px;
+  }
+
+  #xtra_info_popup {
+    width: 300px;
+    height: var(--xtraInfoHeight);
+    margin-left: -150px;
+    margin-top: calc(var(--xtraInfoHeight)/-2)
+  }
+
+  #hlp_popup {
+    width: calc(var(--HelpHeight)*2);
+    height: var(--HelpHeight);
+    margin-left: calc(var(--HelpHeight)*-1);
+    margin-top: calc(var(--HelpHeight)/-2);
+  }
+
+  #AWSError{
+    width: 300px;
+    height: 170px;
+    margin-left: -150px;
+    margin-top: -85px;
+  }
+
+  #ErrorDetailsBox{
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+  }
+
+  #xtra_info_popup, #prntWrningPopup, #hlp_popup, #AWSError, #ErrorDetailsBox{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border: 2px solid black;
+    display: none;
+    z-index: 501;
+  }
+
+  #Navbar {
+    vertical-align: baseline;
+    position: sticky;
+    left:0;
+    border: 0;
+    height: 66px;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    background-color: #149fd2;
+    display: inline;
+    float: left;
+    width: var(--ViewWidth);
+  }
+  
+  .NavItems {
+    height:50px;
+    width:50px;
+    display: block;
+    padding: 8px;
+    background-color: #149fd2;
+    float: left;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .NavItems img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .NavItems:hover{background-color: blue;}
+
+  #prntTxt{
+    padding-left: 10px;
+    padding-right: 5px;
+    font-family: Georgia;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #Warning{
+    text-align: center;
+    font-family: Georgia;
+  }
+
+  #printAnyway {
+    background-color: #149fd2;
+    height: 25px;
+    width: 150px;
+    float: right;
+    border-radius: 4px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: Georgia;
+  }
+
+  #printAnywayTxt {
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    margin-top: 4px;
+    font-family: Georgia;
+    font-size: 14px;
+  }
+
+  .CSS_btns {
+    background-color: #149fd2;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .CSS_btns:hover{
+    background-color: blue;
+  }
+
+  #ErrorImg{
+    float: left;
+    padding: 5px;
+  }
+
+  #ErrorMessage{
+    font-size: 18px;
+    font-family: Georgia;
+    padding: 2px;
+  }
+
+  #ErrorDetailsTextTable, #ErrorDetailsTextDrp{
+    padding: 5px;
+  }

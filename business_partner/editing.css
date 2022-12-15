@@ -1,0 +1,116 @@
+:root{
+    --ViewWidth:1000px;
+    --BodyWidth:2000px;
+    --BodyHeight:1000px;
+    --HelpHeight:150px;
+  }
+
+  form{
+    background-color: rgb(255, 255, 255);
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top: -250px;
+    margin-left: -200px;
+  }
+
+  html, body {
+    height: var(--BodyHeight);
+    width: var(--BodyWidth);
+    margin: 0;
+    padding: 0;
+  }
+
+  .CSS_btns{
+    background-color: #149fd2;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .CSS_btns:hover{
+    background-color: blue;
+  }
+
+  #Key{display:none;}
+
+  #Navbar {
+    vertical-align: baseline;
+    position: sticky;
+    left:0;
+    border: 0;
+    height: 66px;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    background-color: #149fd2;
+    display: inline;
+    float: left;
+    width: var(--ViewWidth);
+  }
+  
+  .NavItems {
+    height:50px;
+    width:50px;
+    display: block;
+    padding: 8px;
+    background-color: #149fd2;
+    float: left;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+  }
+  
+  .NavItems:hover{background-color: blue;}
+
+  #hlp_txt {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: Georgia;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  #overlay {
+    background-color: rgba(0,0,0,0.75);
+    position:fixed;
+    left:0;
+    top: 0;
+    width:100%;
+    height:100%;
+    display: none;
+    z-index: 500;
+  }
+
+  #hlp_icn {
+    cursor:pointer;
+  }
+
+  #cls_hlp {
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+    width: 28px;
+    
+  }
+
+  #hlp_popup {
+    width: calc(var(--HelpHeight)*2);
+    height: var(--HelpHeight);
+    margin-left: calc(var(--HelpHeight)*-1);
+    margin-top: calc(var(--HelpHeight)/-2);
+  }
+
+  #hlp_popup{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    display: none;
+    z-index: 501;
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CTE Partners Editing</title>
+    <link rel="icon" type="image/x-icon" href="Assets/whh-logo.png">
+    <link rel="stylesheet" href="editing.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    
+    <div id="Key">us-east-1:50c4362c-49c9-462c-a316-25c919ecafa9</div>
+    
+    <ul id="Navbar">
+        <li class="NavItems" id="hlp_icn"><img src=Assets/help-circle.svg></li>
+        <li class="NavItems" id="addPartner"><img src=Assets/user-plus.svg></li>
+        <li class="NavItems" id="deletePartner"><img src=Assets/user-minus.svg></li>
+        <a href="index.html"><li style="float:right;" class="NavItems" id="backToIndex"><img src=Assets/arrow-left.svg></li></a>
+    </ul>
+
+    <div style="padding:66px;">
+        <div id="hlp_popup">
+            <img src=Assets/x-circle.svg id="cls_hlp">
+            <p id="hlp_txt"></p>
+        </div>
+
+        <form id="window"></form>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1205.0.min.js"></script>
+    
+    <script src=editing.js></script>
+    <script src=editingHelp.js></script>
+</body>
+
+</html>
