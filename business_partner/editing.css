@@ -1,7 +1,7 @@
 :root{
-    --ViewWidth:1000px;
+   /* --ViewWidth:1000px;
     --BodyWidth:2000px;
-    --BodyHeight:1000px;
+    --BodyHeight:1000px;*/
     --HelpHeight:150px;
   }
 
@@ -46,7 +46,7 @@
     padding: 0;
     list-style-type: none;
     margin: 0;
-    background-color: #149fd2;
+    background-color: #0F36F6;
     display: inline;
     float: left;
     width: var(--ViewWidth);
@@ -57,15 +57,21 @@
     width:50px;
     display: block;
     padding: 8px;
-    background-color: #149fd2;
+    background-color: #0F36F6;
     float: left;
     text-align:center;
     margin-left: auto;
     margin-right: auto;
     cursor:pointer;
   }
+
+  .NavItems img{
+    height: 50px;
+    width: 50px;
+    -webkit-filter: invert(100%); 
+  }
   
-  .NavItems:hover{background-color: blue;}
+  .NavItems:hover{background-color: darkblue;}
 
   #hlp_txt {
     padding-left: 15px;
