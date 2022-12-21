@@ -1,17 +1,16 @@
 :root{
     --ViewWidth:1000px;
-    --TableSize:100px;
+    /*--TableSize:100px;*/
     --HelpHeight:150px;
-    --BodyWidth:2000px;
-    --BodyHeight:1000px;
+    /*--BodyWidth:2000px;
+    --BodyHeight:1000px;*/
     --xtraInfoHeight:150px;
   }
   
   html, body {
-    height: var(--BodyHeight);
-    width: var(--BodyWidth);
     margin: 0;
     padding: 0;
+    overflow: auto;
   }
   
   table, th, td {
@@ -25,6 +24,7 @@
   th {
     background-color: #6F6E6E;
     color: white;
+    width: fit-content;
   }
 
   tr {
@@ -36,7 +36,7 @@
     font-size: 17px;
   }
 
-  td:hover {background-color: #a6bfed;}
+  tr:hover {background-color: #a6bfed;}
   
   #drp_prm {
     background-color: white;

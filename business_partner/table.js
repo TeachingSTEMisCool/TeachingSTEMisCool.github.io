@@ -116,17 +116,19 @@ function AddOrRemoveXtraInfoPopup(data, Selected) {
 
 //Fill dropdown from database
 const drp_prm = document.getElementById("drp_prm");
+let dropdownCreated = false;
 
 function CreateDropdown(data) {
   let Items = DefineItems(data)[0];
   let drp_prm = document.getElementById("drp_prm")
+  drp_prm.innerHTML = '<option value="Default">Choose a filter</option>';
   //Run through the options for a partner(ie. judging)
   for (let x =0; x<Items.length; x++) {
       let newOption = new Option(Items[x].replaceAll('_', ' '), x)
       drp_prm.appendChild(newOption)
   }
+  dropdownCreated = true;
 }
-
 
 //Fill table from database
 
@@ -139,7 +141,9 @@ function CreateTable() {
       let Details = document.getElementById('ErrorDetailsTxtTable');
       Details.innerHTML.text = err;
     } else {
-      CreateDropdown(data)
+      if (!dropdownCreated){
+        CreateDropdown(data)
+      }
       let Items = DefineItems(data)[0];
 
       let myTableDiv = document.getElementById("dynamicTable");
