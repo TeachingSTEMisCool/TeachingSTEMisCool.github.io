@@ -37,8 +37,9 @@ h1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: #0F36F6;
+  width: 100%;
 }
 
 .navBar li {
